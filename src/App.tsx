@@ -1,26 +1,19 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import TexField from './TexField'
 
-function App() {
+/**
+ * 本项目旨在介绍以下三个方面的tsx写法:
+ * 1. props
+ * 2. hooks
+ * 3. render props
+ */
+
+const App: React.FC = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <TexField text='hello' />
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
