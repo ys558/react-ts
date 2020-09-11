@@ -11,7 +11,7 @@ import TexField from './TexField'
 const App: React.FC = () => {
   return (
     <div>
-      <TexField text='hello' />
+      <TexField text='hello' person={{firstName:'', lastName: ''}} />
     </div>
   )
 }
