@@ -1,5 +1,5 @@
 import React from 'react'
-import TexField from './TexField'
+import { TexField } from './TexField'
 
 /**
  * 本项目旨在介绍以下三个方面的tsx写法:
@@ -11,7 +11,10 @@ import TexField from './TexField'
 const App: React.FC = () => {
   return (
     <div>
-      <TexField text='hello' person={{firstName:'', lastName: ''}} />
+      <TexField 
+        text='hello' person={{firstName:'', lastName: ''}}
+        handleChange={e => console.log(e.target.value)} 
+      />
     </div>
   )
 }
