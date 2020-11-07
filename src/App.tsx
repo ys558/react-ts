@@ -3,10 +3,11 @@ import { TexField } from './TexField'
 import { Counter } from './Counter'
 
 /**
- * 本项目旨在介绍以下三个方面的tsx写法:
+ * 本项目旨在介绍以下4个方面的tsx写法:
  * 1. props
  * 2. hooks
  * 3. render props
+ * 4. generics in react
  */
 
 const App: React.FC = () => {
